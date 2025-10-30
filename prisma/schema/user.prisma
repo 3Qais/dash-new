@@ -1,0 +1,13 @@
+model users {
+  id        Int      @id @default(autoincrement())
+  username  String   @unique
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+}
+
+model licenses {
+  id        Int      @id @default(autoincrement())
+  license   String   @unique
+  createdAt DateTime @default(now())
+}

@@ -1,0 +1,11 @@
+// prisma init
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["prismaSchemaFolder"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
